@@ -20,11 +20,16 @@ class Menu(ctk.CTk):
         window.grid(row=0,column=0,sticky='nsew')
         self.changeToWindow(0)
 
-    def changeToWindow(self,index):
-        self.windows[index].tkraise()
+    def changeToWindow(self,indexOrName):
+        if type(indexOrName) == int:
+            return self.windows[indexOrName].tkraise()
+        for window in self.windows:
+            if window.name == indexOrName:
+                return window.tkraise()
 
 class Window(ctk.CTkFrame):
-    def __init__(self,menu,columns,rows):
+    def __init__(self,menu,name,columns=9,rows=9):
+        self.name = name
         super().__init__(menu,corner_radius=0)
         self.grid_columnconfigure(list(range(columns)),weight=1,uniform='fred')
         self.grid_rowconfigure(list(range(rows)),weight=1,uniform='fred')
