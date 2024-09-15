@@ -1,5 +1,3 @@
-# Python
+# Jogo da Velha
 
-**Desatualizado por favor ignore**
-
-Minha biblioteca padrão para criação de programas Python
+Me dei 20 minutos para criar um jogo da velha e olha no que deu

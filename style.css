@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(37, 33, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+}
+
+div {
+    border: 1px solid rgb(14, 14, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64pt;
+    width: 198px;
+    height: 198px;
+}
